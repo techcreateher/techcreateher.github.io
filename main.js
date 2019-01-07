@@ -18,13 +18,13 @@ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 // Display the result in an element with id="demo"
-document.getElementById("days").innerHTML = days + "DAYS";
+document.getElementById("days").innerHTML = days + " DAYS";
 
-document.getElementById("hours").innerHTML = hours + "HOURS";
+document.getElementById("hours").innerHTML = hours + " HOURS";
 
-document.getElementById("minutes").innerHTML = minutes + "MINS";
+document.getElementById("minutes").innerHTML = minutes + " MINS";
 
-document.getElementById("seconds").innerHTML = seconds + "SECS";
+document.getElementById("seconds").innerHTML = seconds + " SECS";
 
 // If the count down is finished, write some text 
 if (distance < 0) {
