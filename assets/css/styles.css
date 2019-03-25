@@ -75,11 +75,9 @@ section{
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 125px 100px;
 }
 
 .item {
-  width: 31%;
   margin: 1%;
   padding: 10px;
 }
