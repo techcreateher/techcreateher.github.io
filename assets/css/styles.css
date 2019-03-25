@@ -70,6 +70,14 @@ section{
 	padding: 125px 100px;
 }
 
+.faq{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 125px 100px;
+}
+
 @media (max-width: 1000px){
 
 	section{
