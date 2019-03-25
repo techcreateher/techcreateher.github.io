@@ -74,12 +74,13 @@ section{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: left;
 }
 
 .item {
   margin: 1%;
   padding: 10px;
+  text-align: left;
 }
 
 @media (max-width: 1000px){
