@@ -54,7 +54,11 @@ a.btn{
 	font-weight: 800;
 	text-align: center;
 }
-
+#demo{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 0px;
+  }
 hr{
 	width: 150px;
 	height: 2px;
@@ -68,6 +72,15 @@ section{
 	flex-direction: column;
 	align-items: center;
 	padding: 125px 100px;
+}
+#timer { 
+    margin-left: 45px;
+    padding-bottom: 50px;
+ }
+
+#days, #hours, #minutes, #seconds {
+    float: left;
+    padding: 5px;
 }
 
 .faq{

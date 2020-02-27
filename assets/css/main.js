@@ -27,8 +27,8 @@ document.getElementById("minutes").innerHTML = minutes + "MINS";
 document.getElementById("seconds").innerHTML = seconds + "SECS";
 
 // If the count down is finished, write some text 
-if (distance < 0) {
-  clearInterval(x);
-  document.getElementById("timer").innerHTML = "EXPIRED";
-  }
-}, 1000);
+// if (distance < 0) {
+//   clearInterval(x);
+//   document.getElementById("timer").innerHTML = "EXPIRED";
+//   }
+ }, 1000);

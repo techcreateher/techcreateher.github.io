@@ -3,17 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tech createHER Challenge</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
-	<script type="text/javascript" src="main.js"></script>
+	<!-- <link rel="text/javascript" href="main.js"> -->
+	<!-- <script type="text/javascript" src="main.js"></script> -->
 	<script src="./assets/float-panel.js"></script>
 
-
+	<!-- <script src="main.js"></script>  -->
 </head>
 
 <body>
@@ -30,15 +31,60 @@
 		</nav>
 	</header>
 
+	
 
 	<section id="home" class="hero">
+		
 		<div class="background-image"></div>
 		<img id="logo" src="./assets/img/newlogo.png">
+		<p id="demo"></p>
+
+		<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("April 3, 2020 09:00:00").getTime();
 		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get today's date and time
+		  var now = new Date().getTime();
+			
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+			
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			
+		  // Output the result in an element with id="demo"
+		  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s "; 
+			
+		  // If the count down is over, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+		</script>
+
 		<h3>Friday April 3rd, 2020</h3>
 		<h3>9:00 AM - 9:00 PM (EST)</h3>
 		<a href="https://airtable.com/shrY1ntsZ29V586KW" class="btn">Register Here</a>
 	</section>
+
+	<!-- <div id="timer">
+		<div id="days"><span id="daySpan">DAYS</span></div>
+		<p>days</p> 
+		<div id="hours"><span id="hourSpan">MINS</span></div>
+		 <p>hours</p> 
+		<div id="minutes"><span id="minSpan">HOURS</span></div>
+		<p>minutes</p>
+		<div id="seconds"><span id="secSpan">SECS</span></div>
+		 <p>seconds</p>
+	  </div> -->
 
 
 	<section id="about" class="our-work  slideanim">
@@ -58,39 +104,39 @@ more women to seek careers in tech.</p>
 
 		<div class="faq">
 			<div class="item">
-				<h5>Do I have to be a woman to attend?</h5>
+				<h5 align="center">Do I have to be a woman to attend?</h5>
 				<p>Lehman College Women in Computer Science (WiCS) is looking to build a community where marginalized people in tech like women can feel welcomed and ready to take on an exciting challenge. To accomplish this, we need all hands on deck! As such, we do not require identification as any specific gender to attend but do encourage you to leave an opportunity open to those who may not have had this opportunity before.</p>
 			</div>
 			<div class="item">
-				<h5>Who can participate?</h5>
+				<h5 align="center">Who can participate?</h5>
 				<p>Current students or students whom have graduated in the past year may register.</p>
 			</div>
 			<div class="item">
-				<h5>Is this an overnight event?</h5>
-				<p>Nope! We are hosting a single-day event this year on Friday, May 10th, 2019 and look forward to seeing you there and at future events.</p>
+				<h5 align="center">Is this an overnight event?</h5>
+				<p>Nope! We are hosting a single-day event this year on Friday, April 3rd, 2020 and look forward to seeing you there and at future events.</p>
 			</div>
 			<div class="item">
-				<h5>Who is hosting this?</h5>
+				<h5 align="center">Who is hosting this?</h5>
 				<p><a href="https://lehmanwics.github.io">The Lehman College Women in Computer Science (WiCS)</a> is bringing this event to Lehman College and CUNY at large. Check us out online!</p>
 			</div>
 			<div class="item">
-				<h5>Will there be food?</h5>
+				<h5 align="center">Will there be food?</h5>
 				<p>Of course! We've got you covered for breakfast, lunch, dinner, and snacks. We haven't forgotten about refreshments either. If you have a food allergy, please note that in the registration form so we are aware.</p>
 			</div>
 			<div class="item">
-				<h5>Do I need to know anything to participate?</h5>
+				<h5 align="center">Do I need to know anything to participate?</h5>
 				<p>Not at all. We will have curated online resources available before the challenge to walk you through some concepts that may help throughout the challenge but no prior technical experience or advanced skills are necessary.</p>
 			</div>
 			<div class="item">
-				<h5>Is this free?</h5>
+				<h5 align="center">Is this free?</h5>
 				<p>Yup! No cost to you at all.</p>
 			</div>
 			<div class="item">
-				<h5>What do I need to bring?</h5>
+				<h5 align="center">What do I need to bring?</h5>
 				<p>Definitely bring your laptop, charger, and anything else to make you feel comfortable during the 12 hours. Comfortable clothing is suggested.</p>
 			</div>	
 			<div class="item">
-				<h5>How many teammates per team?</h5>
+				<h5 align="center">How many teammates per team?</h5>
 				<p>Maximum of 4 per team.</p>
 			</div>	
 		</div>
@@ -119,7 +165,7 @@ more women to seek careers in tech.</p>
 	</section>
 	
 	<section id="location" class="features">
-		<h3 class="title">techCreateHER</h3>
+		<h3 class="title">tech createHER 2020</h3>
 		<a href="https://airtable.com/shrY1ntsZ29V586KW" id="signUpInfoBTN" class="btn slideanim">Register</a>
 		<hr>
 
@@ -156,6 +202,10 @@ more women to seek careers in tech.</p>
 			</li>
 			<li>
 				<img src="https://images.efollett.com/htmlroot/images/templates/storeLogos/CA/1270.gif">
+			</li>
+			<li>
+				<img src="./assets/img/google.png"
+				style="width:90%;">
 			</li>
 		</ul>
 			
